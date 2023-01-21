@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moon Game: Level3</title>
+        <link rel="icon" type="image" href="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT1g1V8Nalm9FkR2atv7annUXbPvk5g-mWffaNxT_ItIFogl-6mC_lHNifw5Tw9-yiS">
+        <link href="style.css" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br>
+        <h1>How many moons does Mars have?</h1>
+        <input type="radio" name="l3a" value="2">2<br>
+        <input type="radio" name="l3a" value="83">83<br>
+        <input type="radio" name="l3a" value="28">28<br>
+        <button id="submit" type="button">Submit</button>
+        <h1 style="color: red;" id="error"></h1>
+        <script>
+            document.getElementById("submit").onclick= function () {
+                let anwser= document.querySelector('input[name="l3a"]:checked').value; 
+                if(anwser==="2"){
+                     document.location.href="level4.html";
+                }else{
+                    document.getElementById("error").innerHTML="Incorrect";
+                }
+            }
+        </script>
+    </body>
+</html>

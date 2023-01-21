@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moon Game: Level9</title>
+        <link rel="icon" type="image" href="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT1g1V8Nalm9FkR2atv7annUXbPvk5g-mWffaNxT_ItIFogl-6mC_lHNifw5Tw9-yiS">
+        <link href="style.css" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br>
+        <h1>How many moons does Jupiter have?</h1>
+        <input type="radio" name="l9a" value="27">27<br>
+        <input type="radio" name="l9a" value="80">80<br>
+        <input type="radio" name="l9a" value="14">14<br>
+        <button id="submit" type="button">Submit</button>
+        <h1 style="color: red;" id="error"></h1>
+        <script>
+            document.getElementById("submit").onclick= function () {
+                let anwser= document.querySelector('input[name="l9a"]:checked').value; 
+                if(anwser==="80"){
+                     document.location.href="level10.html";
+                }else{
+                    document.getElementById("error").innerHTML="Incorrect";
+                }
+            }
+        </script>
+    </body>
+</html>>>
+</html>
