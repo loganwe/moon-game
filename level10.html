@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moon Game: Level2</title>
+        <title>Moon Game: Level10</title>
         <link rel="icon" type="image" href="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT1g1V8Nalm9FkR2atv7annUXbPvk5g-mWffaNxT_ItIFogl-6mC_lHNifw5Tw9-yiS">
         <link href="style.css" rel="stylesheet">
         <style>
@@ -10,21 +10,22 @@
     </head>
     <body>
         <br><br><br><br><br><br><br><br><br>
-        <h1>Which planet does Titan orbit?</h1>
-        <input type="radio" name="l2a" value="Neptune">Neptune<br>
-        <input type="radio" name="l2a" value="Saturn">Saturn<br>
-        <input type="radio" name="l2a" value="Mars">Mars<br>
+        <h1>How many moons does Uranus have?</h1>
+        <input type="radio" name="l10a" value="27">27<br>
+        <input type="radio" name="l10a" value="80">80<br>
+        <input type="radio" name="l10a" value="14">14<br>
         <button id="submit" type="button">Submit</button>
         <h1 style="color: red;" id="error"></h1>
         <script>
             document.getElementById("submit").onclick= function () {
-                let anwser= document.querySelector('input[name="l2a"]:checked').value; 
-                if(anwser==="Saturn"){
-                     document.location.href="level3.html";
+                let anwser= document.querySelector('input[name="l10a"]:checked').value; 
+                if(anwser==="27"){
+                     document.location.href="finished.html";
                 }else{
                     document.getElementById("error").innerHTML="Incorrect";
                 }
             }
         </script>
     </body>
+</html>>>
 </html>

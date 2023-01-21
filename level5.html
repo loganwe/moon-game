@@ -9,7 +9,7 @@
         </style>
     </head>
     <body>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
         <h1>Which planet does Phobos orbit?</h1>
         <input type="radio" name="l5a" value="Neptune">Neptune<br>
         <input type="radio" name="l5a" value="Saturn">Saturn<br>
@@ -20,7 +20,7 @@
             document.getElementById("submit").onclick= function () {
                 let anwser= document.querySelector('input[name="l5a"]:checked').value; 
                 if(anwser==="Mars"){
-                     document.location.href="finished.html";
+                     document.location.href="level6.html";
                 }else{
                     document.getElementById("error").innerHTML="Incorrect";
                 }
